@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>DBZ Ultimate Battle - CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div class="cenario">
+        <!-- HUD - Barras de Vida -->
+        <div class="hud">
+            <div class="health-container player-hp">
+                <div class="name">PLAYER</div>
+                <div class="bar"><div class="fill"></div></div>
+            </div>
+            <div class="health-container enemy-hp">
+                <div class="name">FREEZA</div>
+                <div class="bar"><div class="fill"></div></div>
+            </div>
+        </div>
+
+        <input type="radio" name="player" id="choose-goku" checked>
+        <input type="radio" name="player" id="choose-vegeta">
+        
+        <div class="controles">
+            <label for="atk-1" class="btn">SOCO</label>
+            <label for="atk-special" class="btn especial">ESPECIAL</label>
+        </div>
+
+        <input type="checkbox" id="atk-1">
+        <input type="checkbox" id="atk-special">
+
+        <div class="arena">
+            <div class="player goku"></div>
+            <div class="player vegeta"></div>
+            <div class="ki-blast"></div>
+            <div class="enemy freeza"></div>
+        </div>
+
+        <div class="instrucoes">
+            PERSONAGEM: <label for="choose-goku">GOKU</label> | <label for="choose-vegeta">VEGETA</label>
+        </div>
+    </div>
+
+</body>
+</html>
